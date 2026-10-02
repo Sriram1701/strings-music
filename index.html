@@ -17,14 +17,16 @@
     <nav class="navbar">
         <div class="nav-content">
             <a href="#home" class="logo">
-                <i class="fas fa-music"></i>
-                Strings<span>Music</span>
+                <img src="logo.jpg" alt="Strings Music Logo" class="logo-img">
             </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#courses">Courses</a></li>
-                <li><a href="#gallery">Performances</a></li>
+                <li><a href="#gallery">Videos</a></li>
+                <li><a href="#photo-gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -36,6 +38,14 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-background"></div>
+        <!-- Floating Particles -->
+        <div class="hero-particles">
+            <i class="fas fa-music particle p1"></i>
+            <i class="fas fa-guitar particle p2"></i>
+            <i class="fas fa-drum particle p3"></i>
+            <i class="fas fa-microphone particle p4"></i>
+            <i class="fas fa-compact-disc particle p5"></i>
+        </div>
         <div class="hero-content">
             <h2 class="subtitle">Welcome to Cuddalore's Premier Academy</h2>
             <h1 class="title">Strings School of Music</h1>
@@ -52,8 +62,9 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-text">
-                    <h3 class="section-title">About Our Academy</h3>
-                    <p>Strings School of Music is a dedicated institution fostering musical and artistic talent in Cuddalore. We provide a vibrant environment where passion meets professional guidance.</p>
+                    <h3 class="section-title">About Us</h3>
+                    <p>Strings School of Music was founded with a single vision: to create a sanctuary where raw passion meets world-class professional guidance. Under the expert leadership of our founder, we have grown into Cuddalore's most prestigious academy for both classical and contemporary arts.</p>
+                    <p>Whether you're picking up an instrument for the first time or looking to master the intricacies of Bharatanatyam, our state-of-the-art facilities and dedicated mentors ensure that your artistic journey is deeply rewarding and transformative.</p>
                     <div class="info-cards">
                         <div class="info-card">
                             <i class="fas fa-clock"></i>
@@ -70,9 +81,10 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <div class="image-wrapper glass-panel">
-                        <i class="fas fa-guitar float-icon"></i>
-                        <i class="fas fa-drum float-icon-2"></i>
+                    <div class="image-wrapper glass-panel" style="background: url('https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=800&auto=format&fit=crop') center/cover;">
+                        <div class="founder-badge">
+                            <i class="fas fa-user-tie"></i> Founder & Director
+                        </div>
                     </div>
                 </div>
             </div>
@@ -148,26 +160,22 @@
             <div class="swiper videoSwiper">
                 <div class="swiper-wrapper">
                     <!-- Video Slides -->
-                    <!-- Add your downloaded videos here and name them video1.mp4, video2.mp4, etc. -->
-                    <!-- Here we use placeholder videos to demonstrate the layout -->
                     <div class="swiper-slide glass-panel">
                         <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=500&q=80">
                             <source src="video1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
                         </video>
                         <div class="video-info">
-                            <h4>Recent Performance</h4>
-                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Manjakuppam, Cuddalore</p>
+                            <h4>Guitar Cover 1</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Cuddalore</p>
                         </div>
                     </div>
                     <div class="swiper-slide glass-panel">
                         <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=500&q=80">
                             <source src="video2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
                         </video>
                         <div class="video-info">
-                            <h4>Student Spotlight</h4>
-                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Manjakuppam, Cuddalore</p>
+                            <h4>Dance Routine</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Manjakuppam</p>
                         </div>
                     </div>
                     <div class="swiper-slide glass-panel">
@@ -175,8 +183,8 @@
                             <source src="video3.mp4" type="video/mp4">
                         </video>
                         <div class="video-info">
-                            <h4>Dance Routine</h4>
-                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Manjakuppam, Cuddalore</p>
+                            <h4>Keyboard Solo</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Cuddalore</p>
                         </div>
                     </div>
                     <div class="swiper-slide glass-panel">
@@ -184,8 +192,8 @@
                             <source src="video4.mp4" type="video/mp4">
                         </video>
                         <div class="video-info">
-                            <h4>Keyboard Cover</h4>
-                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Manjakuppam, Cuddalore</p>
+                            <h4>Vocal Performance</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Academy</p>
                         </div>
                     </div>
                     <div class="swiper-slide glass-panel">
@@ -193,11 +201,55 @@
                             <source src="video5.mp4" type="video/mp4">
                         </video>
                         <div class="video-info">
-                            <h4>Guitar Solo</h4>
-                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Manjakuppam, Cuddalore</p>
+                            <h4>Guitar Cover 2</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Cuddalore</p>
                         </div>
                     </div>
-                    <!-- You can add up to 10 slides here by copying the swiper-slide block -->
+                    <div class="swiper-slide glass-panel">
+                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1525362081669-2b476bb628c3?w=500&q=80">
+                            <source src="video6.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-info">
+                            <h4>Bharatanatyam</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Manjakuppam</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide glass-panel">
+                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?w=500&q=80">
+                            <source src="video7.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-info">
+                            <h4>Classical Singing</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Cuddalore</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide glass-panel">
+                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=500&q=80">
+                            <source src="video8.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-info">
+                            <h4>Hip Hop Dance</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Cuddalore</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide glass-panel">
+                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1460036521480-c4b50f6a6c11?w=500&q=80">
+                            <source src="video9.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-info">
+                            <h4>Student Spotlight</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Academy</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide glass-panel">
+                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=500&q=80">
+                            <source src="video10.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-info">
+                            <h4>Annual Concert</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Cuddalore</p>
+                        </div>
+                    </div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination video-pagination"></div>
@@ -446,7 +498,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo">
-                        <i class="fas fa-music"></i> Strings<span>Music</span>
+                        <img src="logo.jpg" alt="Strings Music Logo" class="logo-img">
                     </div>
                     <p class="footer-desc">Empowering the next generation of musicians and dancers in Cuddalore through expert guidance and a passionate community.</p>
                     <div class="social-links">
