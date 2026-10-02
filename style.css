@@ -155,10 +155,11 @@ a {
     width: auto;
     max-width: none;
     object-fit: contain;
-    transform: rotate(35deg) scale(1.1);
+    transform: rotate(20deg) scale(1.1);
     left: -15%;
     animation: floatShape 8s infinite alternate ease-in-out;
     pointer-events: none;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.8));
     z-index: 2;
 }
 
