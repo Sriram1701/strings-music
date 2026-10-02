@@ -151,15 +151,15 @@ a {
 
 .main-instrument {
     position: absolute;
-    height: 120%; 
+    height: 100%; 
     width: auto;
-    max-width: none;
+    max-width: 100%;
     object-fit: contain;
-    mix-blend-mode: lighten; /* Removes black background from the image to make it look like a transparent cutout */
-    transform: rotate(20deg) scale(1.2);
-    left: -15%;
+    transform: rotate(10deg);
+    left: 0;
     animation: floatShape 8s infinite alternate ease-in-out;
     pointer-events: none;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
 }
 
 .hero-split-content {
@@ -168,15 +168,6 @@ a {
     padding-left: 20px;
 }
 
-.hero .subtitle {
-    font-family: var(--font-main);
-    color: var(--accent);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 1rem;
-    margin-bottom: 20px;
-    animation: fadeInDown 1s ease;
-}
 .hero-split .subtitle {
     font-family: var(--font-main);
     color: var(--accent);
