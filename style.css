@@ -160,7 +160,30 @@ a {
     animation: floatShape 8s infinite alternate ease-in-out;
     pointer-events: none;
     filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+    z-index: 2;
 }
+
+.floating-notes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.note {
+    position: absolute;
+    color: var(--accent);
+    opacity: 0;
+    font-size: 2rem;
+    filter: drop-shadow(0 0 10px var(--accent));
+}
+
+.n1 { left: 40%; top: 40%; animation: floatNote 4s infinite linear; }
+.n2 { left: 60%; top: 30%; font-size: 1.5rem; animation: floatNote 5s infinite linear 1.5s; }
+.n3 { left: 50%; top: 50%; font-size: 2.5rem; animation: floatNote 4.5s infinite linear 0.5s; }
+.n4 { left: 30%; top: 60%; font-size: 1.8rem; animation: floatNote 6s infinite linear 2s; }
 
 .hero-split-content {
     text-align: left;
@@ -233,6 +256,12 @@ a {
 @keyframes fadeInRight {
     from { opacity: 0; transform: translateX(50px); }
     to { opacity: 1; transform: translateX(0); }
+}
+@keyframes floatNote {
+    0% { transform: translateY(0) rotate(0deg) scale(0.8); opacity: 0; }
+    20% { opacity: 0.8; }
+    80% { opacity: 0.8; }
+    100% { transform: translateY(-250px) rotate(45deg) scale(1.5); opacity: 0; }
 }
 
 /* Buttons */
