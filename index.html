@@ -36,43 +36,32 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h2 class="subtitle">Cuddalore's Premier Academy</h2>
-                <h1 class="title">Strings <br><span class="highlight">School of Music</span></h1>
-                <p class="description">Discover your rhythm, master your melody, and express your soul through music and dance. Join a community of passionate artists.</p>
-                <div class="hero-buttons">
-                    <a href="#courses" class="btn btn-primary">Explore Courses</a>
-                    <a href="#photo-gallery" class="btn btn-secondary">View Gallery</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <h3>500+</h3>
-                        <p>Students</p>
-                    </div>
-                    <div class="stat">
-                        <h3>20+</h3>
-                        <p>Programs</p>
-                    </div>
-                    <div class="stat">
-                        <h3>100%</h3>
-                        <p>Practical</p>
-                    </div>
+    <section id="home" class="hero-split">
+        <div class="hero-split-left">
+            <div class="hero-left-content">
+                <h1 class="split-title">STRINGS<br>ACADEMY</h1>
+                <p class="split-desc">Discover your rhythm, master your melody, and express your soul through music and dance at Cuddalore's premier academy.</p>
+                
+                <div class="split-search">
+                    <input type="text" placeholder="Search courses...">
+                    <button type="submit"><i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
-            <div class="hero-image-wrapper">
-                <div class="hero-image glass-panel">
-                    <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?q=80&w=800&auto=format&fit=crop" alt="Music Academy">
-                    <div class="hero-badge glass-panel">
-                        <i class="fas fa-star"></i>
-                        <span>Top Rated in Cuddalore</span>
-                    </div>
+        </div>
+        
+        <div class="hero-center-image">
+            <img src="music-notes.png" alt="Music Notes" class="floating-notes">
+            <img src="guitar.png" alt="Guitar" class="main-guitar">
+        </div>
+
+        <div class="hero-split-right">
+            <div class="hero-right-content">
+                <h3 class="right-title">Courses <i class="fas fa-chevron-down"></i></h3>
+                <div class="split-menu">
+                    <a href="#courses" class="menu-btn">Keyboard</a>
+                    <a href="#courses" class="menu-btn active">Guitars</a>
+                    <a href="#courses" class="menu-btn">Drums</a>
+                    <a href="#courses" class="menu-btn">Vocals</a>
                 </div>
             </div>
         </div>
