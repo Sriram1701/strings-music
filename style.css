@@ -668,8 +668,8 @@ section:nth-child(even) {
 /* Contact Section */
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 50px;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 30px;
 }
 
 .contact-info {
@@ -717,10 +717,10 @@ section:nth-child(even) {
 }
 
 .map-container {
-    margin-top: 50px;
     padding: 20px;
     border-radius: 16px;
     overflow: hidden;
+    height: 100%;
 }
 
 .map-container iframe {
