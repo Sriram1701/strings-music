@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings School of Music | Cuddalore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <!-- Swiper CSS for Slideshows -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">
+                <i class="fas fa-music"></i>
+                Strings<span>Music</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#gallery">Performances</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h2 class="subtitle">Welcome to Cuddalore's Premier Academy</h2>
+            <h1 class="title">Strings School of Music</h1>
+            <p class="description">Discover your rhythm, master your melody, and express your soul through music and dance.</p>
+            <div class="hero-buttons">
+                <a href="#courses" class="btn btn-primary">Explore Courses</a>
+                <a href="#contact" class="btn btn-secondary">Join Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3 class="section-title">About Our Academy</h3>
+                    <p>Strings School of Music is a dedicated institution fostering musical and artistic talent in Cuddalore. We provide a vibrant environment where passion meets professional guidance.</p>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <h4>Timings</h4>
+                            <p>Mon - Sat</p>
+                            <p>09:00 AM - 08:00 PM</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>Location</h4>
+                            <p>No 44, ALC Campus,</p>
+                            <p>Manjakuppam, Cuddalore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper glass-panel">
+                        <i class="fas fa-guitar float-icon"></i>
+                        <i class="fas fa-drum float-icon-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses/Services Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h3 class="section-title center">Our Programs</h3>
+            <p class="section-subtitle center">Comprehensive training in music and dance</p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="music">Music</button>
+                <button class="filter-btn" data-filter="dance">Dance</button>
+            </div>
+
+            <div class="course-grid">
+                <!-- Music -->
+                <div class="course-card" data-category="music">
+                    <i class="fas fa-guitar course-icon"></i>
+                    <h4>Guitar Class</h4>
+                    <p>Acoustic and Electric guitar lessons for all skill levels.</p>
+                </div>
+                <div class="course-card" data-category="music">
+                    <i class="fas fa-keyboard course-icon"></i>
+                    <h4>Keyboard Class</h4>
+                    <p>Master the keys with classical and contemporary training.</p>
+                </div>
+                <div class="course-card" data-category="music">
+                    <i class="fas fa-microphone course-icon"></i>
+                    <h4>Singing Classes</h4>
+                    <p>Vocal training, breathing techniques, and performance coaching.</p>
+                </div>
+
+                <!-- Dance -->
+                <div class="course-card" data-category="dance">
+                    <i class="fas fa-shoe-prints course-icon"></i>
+                    <h4>Bharatanatyam</h4>
+                    <p>Traditional Indian classical dance training.</p>
+                </div>
+                <div class="course-card" data-category="dance">
+                    <i class="fas fa-users course-icon"></i>
+                    <h4>Bollywood Dance</h4>
+                    <p>High-energy choreography to popular Bollywood hits.</p>
+                </div>
+                <div class="course-card" data-category="dance">
+                    <i class="fas fa-music course-icon"></i>
+                    <h4>Hip Hop</h4>
+                    <p>Urban dance styles, breaking, and freestyle techniques.</p>
+                </div>
+                <div class="course-card" data-category="dance">
+                    <i class="fas fa-child course-icon"></i>
+                    <h4>Salsa & Choreography</h4>
+                    <p>Partner dancing and professional choreography for events.</p>
+                </div>
+                <div class="course-card" data-category="dance">
+                    <i class="fas fa-compact-disc course-icon"></i>
+                    <h4>Classical Dance</h4>
+                    <p>Various classical dance forms taught by experts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Slideshow Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h3 class="section-title center">Our Performances</h3>
+            <p class="section-subtitle center">Watch our latest videos</p>
+            
+            <div class="swiper videoSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Video Slides -->
+                    <!-- Add your downloaded videos here and name them video1.mp4, video2.mp4, etc. -->
+                    <!-- Here we use placeholder videos to demonstrate the layout -->
+                    <div class="swiper-slide glass-panel">
+                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=500&q=80">
+                            <source src="video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-info">
+                            <h4>Recent Performance</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Manjakuppam, Cuddalore</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide glass-panel">
+                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=500&q=80">
+                            <source src="video2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-info">
+                            <h4>Student Spotlight</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Manjakuppam, Cuddalore</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide glass-panel">
+                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1470229722913-7c092dbbfa26?w=500&q=80">
+                            <source src="video3.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-info">
+                            <h4>Dance Routine</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Manjakuppam, Cuddalore</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide glass-panel">
+                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=500&q=80">
+                            <source src="video4.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-info">
+                            <h4>Keyboard Cover</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Manjakuppam, Cuddalore</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide glass-panel">
+                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1516280440502-65f536f97705?w=500&q=80">
+                            <source src="video5.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-info">
+                            <h4>Guitar Solo</h4>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Manjakuppam, Cuddalore</p>
+                        </div>
+                    </div>
+                    <!-- You can add up to 10 slides here by copying the swiper-slide block -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination video-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next video-next"></div>
+                <div class="swiper-button-prev video-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="photo-gallery" class="photo-gallery">
+        <div class="container">
+            <h3 class="section-title center">Gallery</h3>
+            <p class="section-subtitle center">A glimpse into our academy</p>
+            
+            <div class="photo-grid">
+                <div class="photo-item large">
+                    <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?q=80&w=1200&auto=format&fit=crop" alt="Academy View">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?q=80&w=800&auto=format&fit=crop" alt="Class">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1516280440502-65f536f97705?q=80&w=800&auto=format&fit=crop" alt="Performance">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1470229722913-7c092dbbfa26?q=80&w=800&auto=format&fit=crop" alt="Students">
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=800&auto=format&fit=crop" alt="Studio">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Reviews Slideshow Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h3 class="section-title center">What Our Students Say</h3>
+            <p class="section-subtitle center">
+                <i class="fab fa-google"></i> Google Reviews
+            </p>
+
+            <div class="swiper reviewSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Review 1 -->
+                    <div class="swiper-slide">
+                        <div class="review-card glass-panel">
+                            <div class="review-header">
+                                <img src="https://ui-avatars.com/api/?name=Karthik+S&background=random" alt="User" class="avatar">
+                                <div class="reviewer-info">
+                                    <h4>Karthik S</h4>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">"Best music school in Cuddalore! The teachers are very professional and patient. My son loves his guitar classes here."</p>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="swiper-slide">
+                        <div class="review-card glass-panel">
+                            <div class="review-header">
+                                <img src="https://ui-avatars.com/api/?name=Priya+Dharshini&background=random" alt="User" class="avatar">
+                                <div class="reviewer-info">
+                                    <h4>Priya Dharshini</h4>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">"Joined the Bharatanatyam class last month. The atmosphere is wonderful and the choreography taught is amazing. Highly recommended."</p>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="swiper-slide">
+                        <div class="review-card glass-panel">
+                            <div class="review-header">
+                                <img src="https://ui-avatars.com/api/?name=Rahul+Kumar&background=random" alt="User" class="avatar">
+                                <div class="reviewer-info">
+                                    <h4>Rahul Kumar</h4>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">"Great place to learn keyboard. The timing is very flexible and the fees are reasonable. Good experience overall."</p>
+                        </div>
+                    </div>
+                    <!-- Review 4 -->
+                    <div class="swiper-slide">
+                        <div class="review-card glass-panel">
+                            <div class="review-header">
+                                <img src="https://ui-avatars.com/api/?name=Ananya+R&background=random" alt="User" class="avatar">
+                                <div class="reviewer-info">
+                                    <h4>Ananya R</h4>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">"The vocal training is top-notch. I have seen significant improvement in my singing after joining Strings."</p>
+                        </div>
+                    </div>
+                    <!-- Review 5 -->
+                    <div class="swiper-slide">
+                        <div class="review-card glass-panel">
+                            <div class="review-header">
+                                <img src="https://ui-avatars.com/api/?name=Suresh+V&background=random" alt="User" class="avatar">
+                                <div class="reviewer-info">
+                                    <h4>Suresh V</h4>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">"Wonderful environment for kids to learn dance. Very encouraging instructors."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination review-pagination"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h3 class="section-title center">Frequently Asked Questions</h3>
+            <p class="section-subtitle center">Got questions? We've got answers</p>
+            
+            <div class="faq-container">
+                <div class="faq-item glass-panel">
+                    <div class="faq-question">
+                        <h4>What age groups do you teach?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We welcome students of all ages! We have specialized batches for kids (starting from 5 years old), teenagers, and adults. It's never too early or too late to start your musical journey.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-panel">
+                    <div class="faq-question">
+                        <h4>Do I need to bring my own instrument?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide instruments at the academy for practice during your class. However, we highly recommend purchasing your own instrument so you can practice at home, which is essential for progress.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-panel">
+                    <div class="faq-question">
+                        <h4>How long is each class?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most of our regular music and dance classes are 1 hour long. We also offer extended weekend workshops and intensive training sessions depending on the course you choose.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-panel">
+                    <div class="faq-question">
+                        <h4>Can I switch between different dance styles or instruments?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely! We encourage our students to explore different art forms. You can discuss switching courses with your instructors at the end of your current billing cycle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3 class="section-title center">Get in Touch</h3>
+            <div class="contact-grid">
+                <div class="contact-info glass-panel">
+                    <h4>Visit Our Academy</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Address:</strong>
+                                <p>No 44, ALC Campus, Near Dr. Sridhar Dental Clinic, Manjakuppam, Cuddalore 607001 Tamil Nadu</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong>
+                                <p>info@stringsschool.com</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                            <div>
+                                <strong>Instagram:</strong>
+                                <a href="https://www.instagram.com/stringsschoolofmusic/" target="_blank">@stringsschoolofmusic</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <form class="contact-form glass-panel" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Select Course of Interest</option>
+                            <option value="guitar">Guitar</option>
+                            <option value="keyboard">Keyboard</option>
+                            <option value="singing">Singing</option>
+                            <option value="dance">Dance</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+            
+            <!-- Map Embed -->
+            <div class="map-container glass-panel">
+                <iframe 
+                    src="https://maps.google.com/maps?q=Strings%20School%20Of%20Music,%20Manjakuppam,%20Cuddalore&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-music"></i> Strings<span>Music</span>
+                    </div>
+                    <p class="footer-desc">Empowering the next generation of musicians and dancers in Cuddalore through expert guidance and a passionate community.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/stringsschoolofmusic/" target="_blank" class="glass-panel"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="glass-panel"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="glass-panel"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="glass-panel"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#gallery">Videos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="#courses">Guitar Class</a></li>
+                        <li><a href="#courses">Keyboard Class</a></li>
+                        <li><a href="#courses">Vocal Training</a></li>
+                        <li><a href="#courses">Bharatanatyam</a></li>
+                        <li><a href="#courses">Western Dance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Working Hours</h4>
+                    <ul>
+                        <li><strong>Monday - Saturday:</strong></li>
+                        <li>09:00 AM - 08:00 PM</li>
+                        <li><strong>Sunday:</strong></li>
+                        <li>Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Strings School of Music. All rights reserved.</p>
+                <p>Developed by <span style="color: var(--accent);">Sri_Web_Squad</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917845391712?text=Hi%20Sriram%20I%20found%20you%20in%20Strings%20Music%20website" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
