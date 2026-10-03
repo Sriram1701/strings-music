@@ -224,11 +224,6 @@ a {
 .note.n5 { top: 40%; left: 95%; font-size: 1.8rem; animation: floatNote 4.5s ease-in-out infinite alternate; }
 .note.n6 { top: 90%; left: 20%; font-size: 2.2rem; animation: floatNote 3.2s ease-in-out infinite alternate-reverse; }
 .note.n7 { top: -5%; left: 60%; font-size: 1.6rem; animation: floatNote 3.8s ease-in-out infinite alternate; }
-.note.n8 { top: 25%; left: 15%; font-size: 1.4rem; animation: floatNote 3.1s ease-in-out infinite alternate-reverse; }
-.note.n9 { top: 60%; left: 85%; font-size: 1.7rem; animation: floatNote 4.2s ease-in-out infinite alternate; }
-.note.n10 { top: 55%; left: 25%; font-size: 1.1rem; animation: floatNote 2.7s ease-in-out infinite alternate-reverse; }
-.note.n11 { top: 10%; left: 50%; font-size: 1.3rem; animation: floatNote 3.4s ease-in-out infinite alternate; }
-.note.n12 { top: 80%; left: 45%; font-size: 1.9rem; animation: floatNote 3.9s ease-in-out infinite alternate-reverse; }
 
 @keyframes swirl {
     0% { transform: translate(-50%, -50%) rotate(0deg); }
@@ -273,6 +268,10 @@ a {
 }
 .split-title .highlight {
     color: #f9d868;
+}
+
+.mobile-break {
+    display: none;
 }
 
 .hero-split .description {
@@ -1168,9 +1167,17 @@ select option {
     }
 
     .split-title {
-        font-size: min(1.8rem, 4.8vw);
-        white-space: nowrap;
+        font-size: 2rem;
+        word-wrap: break-word;
         line-height: 1.2;
+    }
+
+    .mobile-break {
+        display: block;
+    }
+
+    .strings-word {
+        margin-right: 12px;
     }
 
     .hero-split .description {
