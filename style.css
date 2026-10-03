@@ -138,14 +138,14 @@ a {
     position: relative;
     overflow: hidden;
     padding-top: 80px;
-    background: url('hero-bg.jpg') no-repeat center center/cover;
+    background: url('master-hero.jpg') no-repeat center center/cover;
 }
 
 .hero-split::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(10,10,15,0.95) 0%, rgba(10,10,15,0.3) 100%);
+    background: linear-gradient(to right, rgba(10,10,15,0.7) 0%, rgba(10,10,15,0.1) 100%);
     z-index: 1;
 }
 
@@ -164,56 +164,7 @@ a {
     height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.guitar-glow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    height: 70%;
-    background: radial-gradient(circle, rgba(212,175,55,0.3) 0%, rgba(212,175,55,0) 65%);
-    z-index: 0;
-    filter: blur(40px);
-}
-
-.main-instrument {
-    position: absolute;
-    height: 120%; 
-    width: auto;
-    max-width: none;
-    object-fit: contain;
-    transform: rotate(50deg) scale(1.1);
-    left: -15%;
-    animation: floatShape 8s infinite alternate ease-in-out;
-    pointer-events: none;
-    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.8));
-    z-index: 2;
-}
-
-.floating-notes {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0; left: 0;
-    pointer-events: none;
-    z-index: 1;
-}
-
-.note {
-    position: absolute;
-    color: var(--accent);
-    opacity: 0;
-    font-size: 2rem;
-    filter: drop-shadow(0 0 10px var(--accent));
-}
-
-.n1 { left: 40%; top: 40%; animation: floatNote 4s infinite linear; }
-.n2 { left: 60%; top: 30%; font-size: 1.5rem; animation: floatNote 5s infinite linear 1.5s; }
-.n3 { left: 50%; top: 50%; font-size: 2.5rem; animation: floatNote 4.5s infinite linear 0.5s; }
-.n4 { left: 30%; top: 60%; font-size: 1.8rem; animation: floatNote 6s infinite linear 2s; }
+/* Old guitar and notes styles removed as they are now baked into the master background image */
 
 .hero-split-content {
     text-align: left;
