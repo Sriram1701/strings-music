@@ -137,8 +137,7 @@ a {
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding-top: 80px;
-    background: url('master-hero.jpg') no-repeat center center/cover;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
 }
 
 .hero-split::before {
@@ -164,6 +163,20 @@ a {
     height: 80vh;
     display: flex;
     align-items: center;
+}
+
+.main-instrument {
+    position: absolute;
+    height: 120%; 
+    width: auto;
+    max-width: none;
+    object-fit: contain;
+    transform: rotate(50deg) scale(1.1);
+    left: -15%;
+    animation: floatShape 8s infinite alternate ease-in-out;
+    pointer-events: none;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.8));
+    z-index: 2;
 }
 
 .hero-split-content {
