@@ -164,7 +164,7 @@ a {
     height: 80vh;
     display: flex;
     align-items: center;
-/* Old guitar and notes styles removed as they are now baked into the master background image */
+}
 
 .hero-split-content {
     text-align: left;
