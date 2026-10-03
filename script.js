@@ -184,4 +184,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', checkScroll);
     checkScroll();
+    
+    // WhatsApp Form Submission
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('waName').value;
+            const phone = document.getElementById('waPhone').value;
+            const course = document.getElementById('waCourse').value;
+            const message = document.getElementById('waMessage').value;
+            
+            const text = `Hi, I am ${name}.\nPhone: ${phone}\nInterested in: ${course}\n\nMessage: ${message}`;
+            const encodedText = encodeURIComponent(text);
+            const whatsappUrl = `https://wa.me/918608600120?text=${encodedText}`;
+            
+            window.open(whatsappUrl, '_blank');
+        });
+    }
 });

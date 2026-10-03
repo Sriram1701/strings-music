@@ -1107,7 +1107,8 @@ select option {
     }
 
     .split-title {
-        font-size: 3.5rem;
+        font-size: 2.2rem;
+        word-wrap: break-word;
     }
 
     .footer-grid {
@@ -1145,7 +1146,24 @@ select option {
     }
 
     .split-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+    
+    section {
+        padding: 50px 0;
+    }
+    
+    .about-text .section-title {
+        text-align: center;
+    }
+    
+    .hero-split-image {
+        height: 40vh;
+        margin-bottom: 20px;
+    }
+    
+    .videoSwiper {
+        padding-bottom: 40px;
     }
 
     .footer-grid {
