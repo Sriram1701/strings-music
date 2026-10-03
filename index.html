@@ -17,7 +17,7 @@
     <nav class="navbar">
         <div class="nav-content">
             <a href="#home" class="logo">
-                <img src="logo.jpg" alt="Strings Music Logo" class="logo-img">
+                <img src="images/logo.jpg" alt="Strings Music Logo" class="logo-img">
                 <span class="logo-text">Strings School of Music</span>
             </a>
             <ul class="nav-links">
@@ -40,11 +40,23 @@
     <section id="home" class="hero-split">
         <div class="container hero-split-container">
             <div class="hero-split-image">
-                <img src="guitar-hero.jpg" alt="Electric Guitar" class="main-instrument" style="mix-blend-mode: screen;">
+                <div class="magical-notes">
+                    <div class="magical-ring ring1"></div>
+                    <div class="magical-ring ring2"></div>
+                    <div class="magical-ring ring3"></div>
+                    <i class="fas fa-music note n1"></i>
+                    <i class="fas fa-music note n2"></i>
+                    <i class="fas fa-music note n3"></i>
+                    <i class="fas fa-star note n4"></i>
+                    <i class="fas fa-star note n5"></i>
+                    <i class="fas fa-music note n6"></i>
+                    <i class="fas fa-star note n7"></i>
+                </div>
+                <img src="images/guitar-hero-new.jpg" alt="Electric Guitar" class="main-instrument" style="mix-blend-mode: screen;">
             </div>
             <div class="hero-split-content">
                 <h2 class="subtitle">Cuddalore's Premier Academy</h2>
-                <h1 class="split-title">STRINGS<br>SCHOOL<br><span class="highlight">OF MUSIC</span></h1>
+                <h1 class="split-title">STRINGS SCHOOL <span class="highlight">OF MUSIC</span></h1>
                 <p class="description">Discover your rhythm, master your melody, and express your soul through music and dance. Join a community of passionate artists.</p>
                 
                 <div class="hero-stats">
@@ -114,7 +126,7 @@
     <!-- Courses/Services Section -->
     <section id="courses" class="courses">
         <div class="container">
-            <h3 class="section-title center">Our Programs</h3>
+            <h3 class="section-title center">Our Courses</h3>
             <p class="section-subtitle center">Comprehensive training in music and dance</p>
             
             <div class="filter-buttons">
@@ -126,21 +138,21 @@
             <div class="course-grid">
                 <!-- Music -->
                 <div class="course-card" data-category="music">
-                    <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=600&q=80" alt="Guitar Class" class="course-img">
+                    <img src="images/guitar-class.jpg" alt="Guitar Class" class="course-img">
                     <div class="course-overlay">
                         <h4>Guitar Class</h4>
                         <p>Acoustic and Electric guitar lessons for all skill levels.</p>
                     </div>
                 </div>
                 <div class="course-card" data-category="music">
-                    <img src="https://images.unsplash.com/photo-1552422535-c45813c61732?w=600&q=80" alt="Keyboard Class" class="course-img">
+                    <img src="images/keyboard-class.jpg" alt="Keyboard Class" class="course-img">
                     <div class="course-overlay">
                         <h4>Keyboard Class</h4>
                         <p>Master the keys with classical and contemporary training.</p>
                     </div>
                 </div>
                 <div class="course-card" data-category="music">
-                    <img src="https://images.unsplash.com/photo-1516280440504-6250325d2b63?w=600&q=80" alt="Singing Classes" class="course-img">
+                    <img src="images/singing.jpg" alt="Singing Classes" class="course-img">
                     <div class="course-overlay">
                         <h4>Singing Classes</h4>
                         <p>Vocal training, breathing techniques, and performance coaching.</p>
@@ -149,7 +161,7 @@
 
                 <!-- Dance -->
                 <div class="course-card" data-category="dance">
-                    <img src="https://images.unsplash.com/photo-1583513702439-2e611c58e93d?w=600&q=80" alt="Bharatanatyam" class="course-img">
+                    <img src="images/bharatanatyam.jpg" alt="Bharatanatyam" class="course-img">
                     <div class="course-overlay">
                         <h4>Bharatanatyam</h4>
                         <p>Traditional Indian classical dance training.</p>
@@ -163,21 +175,21 @@
                     </div>
                 </div>
                 <div class="course-card" data-category="dance">
-                    <img src="https://images.unsplash.com/photo-1535525153412-5a42439a610d?w=600&q=80" alt="Hip Hop" class="course-img">
+                    <img src="images/hiphop.jpg" alt="Hip Hop" class="course-img">
                     <div class="course-overlay">
                         <h4>Hip Hop</h4>
                         <p>Urban dance styles, breaking, and freestyle techniques.</p>
                     </div>
                 </div>
                 <div class="course-card" data-category="dance">
-                    <img src="https://images.unsplash.com/photo-1504609774528-69473e13d942?w=600&q=80" alt="Salsa & Choreography" class="course-img">
+                    <img src="images/salsa.jpg" alt="Salsa & Choreography" class="course-img">
                     <div class="course-overlay">
                         <h4>Salsa & Choreography</h4>
                         <p>Partner dancing and professional choreography for events.</p>
                     </div>
                 </div>
                 <div class="course-card" data-category="dance">
-                    <img src="https://images.unsplash.com/photo-1518834107812-6a3622bb8fbf?w=600&q=80" alt="Classical Dance" class="course-img">
+                    <img src="images/classical.jpg" alt="Classical Dance" class="course-img">
                     <div class="course-overlay">
                         <h4>Classical Dance</h4>
                         <p>Various classical dance forms taught by experts.</p>
@@ -197,79 +209,71 @@
                 <div class="swiper-wrapper">
                     <!-- Video Slides -->
                     <div class="swiper-slide glass-panel">
-                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=500&q=80">
+                        <video class="custom-video" controls playsinline>
                             <source src="video1.mp4" type="video/mp4">
                         </video>
                         <div class="video-info">
-                            <h4>Guitar Cover 1</h4>
+                            <h4>Munbe Vaa - Guitar Cover</h4>
                             <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Cuddalore</p>
                         </div>
                     </div>
                     <div class="swiper-slide glass-panel">
-                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=500&q=80">
+                        <video class="custom-video" controls playsinline>
                             <source src="video2.mp4" type="video/mp4">
                         </video>
                         <div class="video-info">
-                            <h4>Dance Routine</h4>
+                            <h4>Rowdy Baby - Dance</h4>
                             <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Manjakuppam</p>
                         </div>
                     </div>
                     <div class="swiper-slide glass-panel">
-                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1470229722913-7c092dbbfa26?w=500&q=80">
+                        <video class="custom-video" controls playsinline>
                             <source src="video3.mp4" type="video/mp4">
                         </video>
                         <div class="video-info">
-                            <h4>Keyboard Solo</h4>
+                            <h4>Pudhu Vellai Mazhai - Keyboard</h4>
                             <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Cuddalore</p>
                         </div>
                     </div>
                     <div class="swiper-slide glass-panel">
-                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=500&q=80">
+                        <video class="custom-video" controls playsinline>
                             <source src="video4.mp4" type="video/mp4">
                         </video>
                         <div class="video-info">
-                            <h4>Vocal Performance</h4>
+                            <h4>Ennavale - Vocal Cover</h4>
                             <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Academy</p>
                         </div>
                     </div>
                     <div class="swiper-slide glass-panel">
-                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1516280440502-65f536f97705?w=500&q=80">
+                        <video class="custom-video" controls playsinline>
                             <source src="video5.mp4" type="video/mp4">
                         </video>
                         <div class="video-info">
-                            <h4>Guitar Cover 2</h4>
+                            <h4>Nenjukkul Peidhidum - Guitar</h4>
                             <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Cuddalore</p>
                         </div>
                     </div>
                     <div class="swiper-slide glass-panel">
-                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1525362081669-2b476bb628c3?w=500&q=80">
+                        <video class="custom-video" controls playsinline>
                             <source src="video6.mp4" type="video/mp4">
                         </video>
                         <div class="video-info">
-                            <h4>Bharatanatyam</h4>
+                            <h4>Thillana - Bharatanatyam</h4>
                             <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Manjakuppam</p>
                         </div>
                     </div>
                     <div class="swiper-slide glass-panel">
-                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?w=500&q=80">
+                        <video class="custom-video" controls playsinline>
                             <source src="video7.mp4" type="video/mp4">
                         </video>
                         <div class="video-info">
-                            <h4>Classical Singing</h4>
+                            <h4>Carnatic Fusion - Singing</h4>
                             <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Cuddalore</p>
                         </div>
                     </div>
+
                     <div class="swiper-slide glass-panel">
-                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=500&q=80">
-                            <source src="video8.mp4" type="video/mp4">
-                        </video>
-                        <div class="video-info">
-                            <h4>Hip Hop Dance</h4>
-                            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Cuddalore</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide glass-panel">
-                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1460036521480-c4b50f6a6c11?w=500&q=80">
+                        <video class="custom-video" controls playsinline>
                             <source src="video9.mp4" type="video/mp4">
                         </video>
                         <div class="video-info">
@@ -278,7 +282,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide glass-panel">
-                        <video class="custom-video" loop muted playsinline poster="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=500&q=80">
+                        <video class="custom-video" controls playsinline>
                             <source src="video10.mp4" type="video/mp4">
                         </video>
                         <div class="video-info">
@@ -541,7 +545,8 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo">
-                        <img src="logo.jpg" alt="Strings Music Logo" class="logo-img">
+                        <img src="images/logo.jpg" alt="Strings Music Logo" class="logo-img">
+                        <span class="logo-text">Strings School of Music</span>
                     </div>
                     <p class="footer-desc">Empowering the next generation of musicians and dancers in Cuddalore through expert guidance and a passionate community.</p>
                     <div class="social-links">
@@ -586,8 +591,8 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 Strings School of Music. All rights reserved.</p>
-                <p>Developed by <span style="color: var(--accent);">Sri_Web_Squad</span></p>
+                <p>&copy; 2026 Strings School of Music. All rights reserved.</p>
+                <p>Developed by <a href="https://wa.me/917845391712?text=Hi%20Sriram,%20I%20found%20you%20in%20Strings%20School%20of%20Music%20website" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">Sri Web Squad</a></p>
             </div>
         </div>
     </footer>
@@ -602,3 +607,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+

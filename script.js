@@ -144,4 +144,44 @@ document.addEventListener('DOMContentLoaded', () => {
             item.classList.toggle('active');
         });
     });
+
+    // Counter Animation
+    const stats = document.querySelectorAll('.stat h3');
+    let hasCounted = false;
+
+    const countUp = (element, target) => {
+        let current = 0;
+        const increment = target / 50;
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                clearInterval(timer);
+                element.innerText = target + (element.dataset.suffix || '');
+            } else {
+                element.innerText = Math.ceil(current) + (element.dataset.suffix || '');
+            }
+        }, 30);
+    };
+
+    const checkScroll = () => {
+        if (hasCounted) return;
+        const heroStats = document.querySelector('.hero-stats');
+        if (!heroStats) return;
+        
+        const rect = heroStats.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+            hasCounted = true;
+            stats.forEach(stat => {
+                const text = stat.innerText;
+                const target = parseInt(text);
+                const suffix = text.replace(/[0-9]/g, '');
+                stat.dataset.suffix = suffix;
+                stat.innerText = '0' + suffix;
+                countUp(stat, target);
+            });
+        }
+    };
+
+    window.addEventListener('scroll', checkScroll);
+    checkScroll();
 });
